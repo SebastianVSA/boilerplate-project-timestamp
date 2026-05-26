@@ -43,7 +43,7 @@ app.get("/api/:date?", function (req, res) {
   if (/^\d+$/.test(dateParam)) {
     dateObj = new Date(parseInt(dateParam));
   } else {
-    // 3. Si es una cadena de texto (ej. "2015-12-25")
+  
     dateObj = new Date(dateParam);
   }
 
